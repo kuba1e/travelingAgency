@@ -2,9 +2,14 @@ let controller;
 let slideScene;
 let pageScene;
 let detailScene;
+const wrapper = document.querySelector('.wrapper')
 let mouse = document.querySelector('.cursor');
 const burger = document.querySelector('.burger');
 const logo = document.querySelector('#logo');
+
+//wrapper.scroll(0,0);
+
+
 
 const animateSlides = ()=>{
     //initial controller
@@ -59,6 +64,7 @@ const animateSlides = ()=>{
 const cursor = (e)=>{
     mouse.style.top = e.pageY + "px";
     mouse.style.left = e.pageX + "px";
+    
 }
 
 const activeCursor = (e)=>{
