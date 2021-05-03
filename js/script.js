@@ -33,7 +33,6 @@ const animateSlides = ()=>{
             reverse:false,
         })
         .setTween(slideTl)
-        .addIndicators({colorStart: 'white', colorTrigger: 'white', name: 'slide'})
         .addTo(controller)
         //new Animation 
         const pageTl = gsap.timeline({defaults: {duration:3, ease: 'power2.inOut'}})
@@ -52,9 +51,6 @@ const animateSlides = ()=>{
         .setPin(slide, {pushFollowers: false})
         .setTween(pageTl)
         .addTo(controller)
-        .addIndicators({
-            colorStart: 'white', colorTrigger: 'white', name: 'page', indent: 200
-        })
     })
 
 
@@ -171,8 +167,6 @@ const detailAnimation = ()=>{
      }).setPin(slide, {pushFollowers:false})
        .setTween(slideTl)
        .addTo(controller)
-       .addIndicators({colorStart: 'white', colorTrigger: 'white', name: 'detailScene'})
-
     });
 }
 
